@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
-const { Client,Intents, MessageEmbed} = require('discord.js');
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+const { Client, Intents } = require('discord.js');
+const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 const discordButtons = require("discord-buttons-plugin");
 const buttonClient = new discordButtons(client)
 const fs = require('fs-extra')
