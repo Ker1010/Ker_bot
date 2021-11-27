@@ -19,6 +19,7 @@
     "dotenv": "^10.0.0",
     "fs": "^0.0.1-security",
     "fs-extra": "^10.0.0",
+    "noblox.js": "^4.12.0",
     "npm-check-updates": "^11.8.5",
     "url": "^0.11.0",
     "wokcommands": "^1.5.3"

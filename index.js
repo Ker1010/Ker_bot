@@ -10,7 +10,7 @@ const guildId = '637793729285062676';
 
 client.on ("ready", () => {
     console.log('bot online :D')
-    client.user.setActivity(`開發進度3%`)
+    client.user.setActivity(`開發進度5%`)
 })
 
 const prefix = '>'
@@ -35,6 +35,14 @@ client.on('message', message =>{
     //me
     if(command === 'crash'){
         client.commands.get('crash').execute(message, args);
+    }
+    //api
+    if(command === 'cat'){
+        client.commands.get('cat').execute(message, args);
+    }
+    if(command === 'roblox'){
+        let username = args[0]
+        client.commands.get('roblox').execute(message, args);
     }
     //command
     if(command === 'help'){
@@ -79,4 +87,4 @@ client.on('message', message =>{
 });
 
 
-client.login(process.env.token)
+client.login("ODA1MDI4Mzc3MTAyMzg1MTgz.YBU7GQ.CDAMa3lWv8J00KlNRyl6Itwr9eU")
