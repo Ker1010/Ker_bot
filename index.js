@@ -40,10 +40,6 @@ client.on('message', message =>{
     if(command === 'cat'){
         client.commands.get('cat').execute(message, args);
     }
-    if(command === 'roblox'){
-        let username = args[0]
-        client.commands.get('roblox').execute(message, args);
-    }
     //command
     if(command === 'help'){
         client.commands.get('help').execute(message, args)
